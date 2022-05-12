@@ -1,6 +1,7 @@
 const {Sequelize} = require('./db');
 const {Band, Musician} = require('./index')
 
+
 describe('Band and Musician Models', () => {
     /**
      * Runs the code prior to all tests
@@ -19,8 +20,8 @@ describe('Band and Musician Models', () => {
     })
 
     test('can create a Musician', async () => {
-        const testMuscian = await Musician.create({name: 'Micheal Bolton', instrument: 'vocal'}) 
+        const testMuscian = await Musician.create({name: 'Micheal Bolton', instrument: 'Gitar'}) 
         // TODO - test creating a musician
-        expect('testMusician.instrument').toBe('vocal');
+        expect('testMusician.instrument').toBe('Gitar');
     })
 })
